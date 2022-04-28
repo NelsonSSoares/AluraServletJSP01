@@ -7,11 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%
-		String nomeEmpresa = (String) request.getAttribute("empresa");
-	%>
 	
-	<h3>Empresa: <% out.println(nomeEmpresa); // %= nomeEmpresa %> cadastrada com sucesso!!</h3>
+	<h3>Empresa: ${empresa} cadastrada com sucesso!!</h3>
 
 
 </body>
