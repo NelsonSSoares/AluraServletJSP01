@@ -9,21 +9,19 @@ public class Banco {
 	
 	static {
 		Empresa empresa = new Empresa();
-		empresa.setNome("IBM");
+		empresa.setNome("Alura");
 		Empresa empresa2 = new Empresa();
-		empresa2.setNome("Microsoft");
+		empresa2.setNome("Caelum");
 		lista.add(empresa);
 		lista.add(empresa2);
 	}
-	
+
 	public void adiciona(Empresa empresa) {
-		
 		Banco.lista.add(empresa);
-		System.out.println(Banco.lista);
 	}
 	
 	public List<Empresa> getEmpresas(){
 		return Banco.lista;
 	}
-	
+
 }
